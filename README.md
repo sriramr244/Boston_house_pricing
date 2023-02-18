@@ -50,20 +50,21 @@ python app.py
 - Currently hosted website: [Link_to_app](http://34.204.69.28/)
 
 # Containerizing The application
+(Replace the user name with your username in docker
 - Once creating the dockerfile creating ```dockerfile``` key in the following commands inside the working directory
 ```
-docker build -t s22ranga/house-pricing:latest . 
+docker build -t user_name/house-pricing:latest . 
 ```
 This creates an image of the application.
 
 - Inorder to start the application the image has to be created into a container. Once the container is running you can open th emapped port in the local system, In order to host the application in local port 5000 key in the ecommand below.
 
 ```
-docker run -d -p 5000:3000 s22ranga/house-pricing:latest
+docker run -d -p 5000:3000 username/house-pricing:latest
 ```
 - To push the application to the docker hub, key in the following command
 ```
-docker push s22ranga/house-pricing:latest
+docker push username/house-pricing:latest
 ```
 
 
